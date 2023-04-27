@@ -3,10 +3,30 @@
   <head>
     <title>Add text to p element</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/23799ad1c1.js" crossorigin="anonymous"></script>
+
+
   </head>
   <body>
-    <textarea id="text"></textarea>
-    <button id="add-text-btn" aria-hidden="true">Add Text</button>
+    <div class="container">
+      <textarea id="text"></textarea>
+      <div class="button-container">
+
+        <!--
+        <button id="add-text-btn" aria-hidden="true">Add Text</button>
+        <button id="clear-text-btn" aria-hidden="true">Clear Text</button>
+        <button id="clear-form-btn" aria-hidden="true">Clear Form</button>
+        <button id="paste-btn" aria-hidden="true">Paste</button>
+-->
+
+<button id="paste-btn"><i class="fas fa-clipboard"></i></button>
+<button id="add-text-btn"><i class="fas fa-plus"></i></button>
+<button id="clear-text-btn"><i class="fas fa-minus"></i></button>
+<button id="clear-form-btn"><i class="fas fa-times"></i></button>
+
+      </div>
+    </div>
     <div id="text-output"></div>
 
     <script src="script.js"></script>

@@ -14,23 +14,88 @@ textarea {
   }
   
   button {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    padding: 0.1em 1em;
+    margin: 0 0.5em;
+    border: none;
+    border-radius: .5em;
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
     background-color: #2B3C53;
     color: #fff;
-    font-size: 2em;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
   
-  p {
-    font-size: 3em;
-    line-height: 1.5;
+  button:hover {
+    background-color: #1D2A3A;
+
   }
   
+  button:active {
+    transform: translateY(0.2em);
+    box-shadow: 0 0.3em 0.5em rgba(0, 0, 0, 0.2);
+  }
+  
+  button#add-text-btn {
+    background-color: #205C3B;
+  }
+  
+  button#clear-text-btn {
+    background-color: #6B1E1E;
+  }
+  
+  button#clear-form-btn {
+    background-color: #3F3F3F;
+  }
+  
+  button#paste-btn {
+    background-color: #BB6F2E;
+  }
+  
+  button:hover {
+    background-color: #2B3C53;
+    color: #fff;
+  }
+  
+  button#add-text-btn:hover {
+    background-color: #000;
+  }
+  
+  button#clear-text-btn:hover {
+    background-color: #000;
+  }
+  
+  button#clear-form-btn:hover {
+    background-color: #000;
+  }
+
+  button#paste-btn:hover {
+    background-color: #000;
+  }
+  
+  p {
+    font-weight: bold;
+    font-size: 3em;
+    line-height: 1.5;
+    word-wrap: break-word;
+    max-width: 100%;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .button-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
